@@ -7,7 +7,7 @@
 
 ---
 
-## 🧩 Descripción general
+##  Descripción general
 Este proyecto recrea el clásico juego **Damas Internacionales** en un tablero de **10x10** casillas.  
 Está desarrollado en **C++**, bajo una estructura **modular** y con un diseño claro que facilita la comprensión del código.  
 
@@ -16,7 +16,7 @@ Cada jugador comienza con 20 piezas colocadas en las casillas oscuras de su lado
 
 ---
 
-## ⚙️ Estructura del proyecto
+##  Estructura del proyecto
 Damas│
 ├── Pieza.h
 ├── Pieza.cpp
@@ -29,7 +29,7 @@ Damas│
 
 ---
 
-## 🕹️ Cómo jugar
+##  Cómo jugar
 
 - Al iniciar se muestra el tablero de **10x10**.  
 - Cada jugador tiene **20 piezas** (`w` = blancas, `b` = negras).  
@@ -41,7 +41,7 @@ Damas│
 
 ---
 
-## 📘 Reglas básicas implementadas
+##  Reglas básicas implementadas
 
 1. Tablero de **10x10** alternando colores.  
 2. Cada jugador inicia con **20 piezas**.  
@@ -53,34 +53,34 @@ Damas│
 
 ---
 
-## 💡 Innovaciones implementadas
+##  Innovaciones implementadas
 
-### 🧱 Estructura modular (POO básica)
+###  Estructura modular (POO básica)
 El código está dividido en clases (`Pieza`, `Tablero`, `Juego`) y archivos `.h` / `.cpp`, siguiendo buenas prácticas de programación orientada a objetos.
 
-### 👑 Coronación automática de damas
+###  Coronación automática de damas
 Las piezas se convierten automáticamente en dama (`W` o `B`) al llegar al otro extremo del tablero.
 
-### ⚔️ Capturas obligatorias
+###  Capturas obligatorias
 El sistema detecta cuando un jugador tiene capturas disponibles y no permite movimientos normales hasta que se capture.
 
-### ✅ Validación y control de reglas
+###  Validación y control de reglas
 Se comprueban coordenadas válidas, movimientos dentro del tablero y turnos correctos para evitar errores o comportamientos incorrectos.
 
-### 🧭 Interfaz textual amigable
+###  Interfaz textual amigable
 Se muestra un tablero numerado, los turnos actuales, mensajes claros y un formato ordenado que facilita la experiencia del jugador.
 
 ### 🏁 Detección automática de fin de juego
 Cuando un jugador se queda sin piezas, el programa declara automáticamente al ganador y finaliza la partida.
 
-### 💾 Código claro, funcional y escalable
+###  Código claro, funcional y escalable
 Aunque se mantiene básico, la estructura permite extender fácilmente el juego con futuras funciones (guardado, tiempo por turno, IA, colores, etc.).
 
 ---
 
-## 🚀 Instrucciones de compilación y ejecución
+##  Instrucciones de compilación y ejecución
 
-### 💻 Compilar
+###  Compilar
 En consola o terminal (Linux, macOS o Windows con g++):
 ```bash
 g++ main.cpp Juego.cpp Tablero.cpp Pieza.cpp -o damas -std=c++17
